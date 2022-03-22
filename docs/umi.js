@@ -41450,7 +41450,7 @@
       };
       return k;
     }
-    var ge = { basename: '/' };
+    var ge = { basename: '/demo-ahooks-2022/' };
     window.routerBase && (ge.basename = window.routerBase);
     var me = { NODE_ENV: 'production' }.__IS_SERVER ? null : he(ge),
       be = function () {
