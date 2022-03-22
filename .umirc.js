@@ -34,9 +34,7 @@ export default defineConfig({
   // publicPath: '/demo-ahooks-reactuse-202203/',
   // publicPath: './',
   publicPath:
-    process.env.NODE_ENV === 'production'
-      ? '/demo-ahooks-reactuse-202203/'
-      : '/',
+    process.env.NODE_ENV === 'production' ? '/demo-ahooks-2022/' : '/',
   outputPath: 'docs',
   mfsu: {
     //   // production: { output: '.mfsu-production' }
