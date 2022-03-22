@@ -32,17 +32,16 @@ export default defineConfig({
   // ],
   routes,
   // publicPath: '/demo-ahooks-reactuse-202203/',
-  // publicPath: './',
-  publicPath:
-    process.env.NODE_ENV === 'production' ? '/demo-ahooks-2022/' : '/',
+  publicPath: './',
+  // publicPath: process.env.NODE_ENV === 'production' ? '/demo-ahooks-2022/' : '/',
   outputPath: 'docs',
   mfsu: {
     //   // production: { output: '.mfsu-production' }
   },
   // fastRefresh: {},
 
-  // mpa: {},
-  exportStatic: {},
+  mpa: {},
+  // exportStatic: {},
 
   // chainWebpack(config, { env, webpack, createCSSRule }) {
   //   // 设置 alias
