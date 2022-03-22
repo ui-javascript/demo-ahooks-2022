@@ -1,6 +1,7 @@
 import { useRequest } from 'ahooks';
 import Mock from 'mockjs';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 async function getEmail(search) {
   console.log('debounce getEmail', search);
@@ -19,6 +20,7 @@ export default () => {
 
   return (
     <div>
+      debounce
       <input
         placeholder="Search Emails"
         onChange={(e) => run(e.target.value)}
@@ -35,3 +37,5 @@ export default () => {
     </div>
   );
 };
+
+// ReactDOM.render(<App />, document.getElementById('root'));

@@ -14,6 +14,8 @@ const routes = getEntry.hasIndex
       },
       ...mpaEntries.entry,
     ];
+// const routes = mpaEntries.entry;
+
 console.log(routes);
 
 export default defineConfig({
@@ -40,7 +42,7 @@ export default defineConfig({
   },
   // fastRefresh: {},
 
-  mpa: {},
+  // mpa: {},
   // exportStatic: {},
 
   // chainWebpack(config, { env, webpack, createCSSRule }) {
