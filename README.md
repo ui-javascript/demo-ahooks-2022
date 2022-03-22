@@ -3,6 +3,8 @@
 - @ide https://uijavascript-demoahooks2-z8aghkd5jn7.ws-us38.gitpod.io/
 - @demo 
     - https://8000-uijavascript-demoahooks2-z8aghkd5jn7.ws-us38.gitpod.io/
+    - https://8000-uijavascript-demoahooks2-z8aghkd5jn7.ws-us38.gitpod.io/table-cascade
+    - https://8000-uijavascript-demoahooks2-z8aghkd5jn7.ws-us38.gitpod.io/table-simple
     - https://8000-uijavascript-demoahooks2-z8aghkd5jn7.ws-us38.gitpod.io/debounce2
 
 # 常见问题 @bug
