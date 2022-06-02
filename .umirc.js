@@ -5,17 +5,15 @@ const { CONFIG } = require('./mpa.config');
 
 const mpaEntries = getEntry(CONFIG.entry);
 
-const routes = getEntry.hasIndex
-  ? mpaEntries.entry
-  : [
-      {
-        path: '/',
-        component: mpaEntries.entry[0].component,
-      },
-      ...mpaEntries.entry,
-    ];
-// const routes = mpaEntries.entry;
-
+const routes = [
+  {
+    path: '/',
+    component: mpaEntries.indexInfo.hasIndex
+      ? mpaEntries.indexInfo.indexComponent
+      : mpaEntries.entries[0].component,
+  },
+  ...mpaEntries.entries,
+];
 console.log(routes);
 
 export default defineConfig({
@@ -33,19 +31,25 @@ export default defineConfig({
   //   },
   // ],
   routes,
-  // publicPath: '/demo-ahooks-reactuse-202203/',
   publicPath: './',
-  // publicPath: process.env.NODE_ENV === 'production' ? '/demo-ahooks-2022/' : '/',
-  // base: process.env.NODE_ENV === 'production' ? '/demo-ahooks-2022/' : '/',
+  // publicPath:
+  //   process.env.NODE_ENV === 'production'
+  //     ? 'https://ui-javascript.github.io/tpl-mpa-umi3-react17/'
+  //     : '/',
   outputPath: 'docs',
+  // esbuild: {},
+  hash: true,
+  // history: { type: 'hash' },
   mfsu: {
     //   // production: { output: '.mfsu-production' }
   },
   // fastRefresh: {},
 
-  // mpa: {},
+  // @todo 多页面配置总有问题
+  mpa: {},
   // exportStatic: {},
 
+  // dynamicImport: {},
   // chainWebpack(config, { env, webpack, createCSSRule }) {
   //   // 设置 alias
   //   // config.resolve.alias.set('@', 'src');
